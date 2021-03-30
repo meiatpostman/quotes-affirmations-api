@@ -97,4 +97,4 @@ api.add_resource(quote, "/quote", "/quote/", "/quote/<int:id>")
 api.add_resource(home,"/")
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host='0.0.0.0', port=port, debug=True)
